@@ -1,0 +1,14 @@
+<!-- kakeibo/templates/kakeibo/transition.html -->
+{% extends 'kakeibo/base.html' %}
+
+{% block content %}
+
+{% autoescape off %}
+{{ transition_plot }}
+{% endautoescape %}
+
+{% endblock %}
+
+{% block extrajs %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{% endblock %}

@@ -1,0 +1,6 @@
+<!-- kakeibo/templates/kakeibo/widgets/custom_radio.html -->
+{% for group, options, index in widget.optgroups %}
+  {% for option in options %}
+    {% include option.template_name with widget=option %}
+  {% endfor %}
+{% endfor %}
